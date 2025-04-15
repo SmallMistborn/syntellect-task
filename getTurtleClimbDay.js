@@ -12,10 +12,10 @@ export default function getTurtleClimbDay(hillHeight = 100, climb = 50, slide = 
     let remHeight = 0;
     let day = 0;
 
-    while (height < hillHeight) {
+    while (remHeight < hillHeight) {
         day++;
         remHeight += climb;
-        if (height >= hillHeight) break;
+        if (remHeight >= hillHeight) break;
         remHeight -= slide;
     }
 
